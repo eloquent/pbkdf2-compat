@@ -17,6 +17,10 @@ This library provides a forwards-compatible implementation of the
 allows the use of this function in versions of PHP prior to 5.5, and falls back
 to the native function when it is available.
 
+## Usage
+
+See the [PHP manual entry](http://php.net/hash_pbkdf2).
+
 ## Acknowledgements
 
 Inspired by [ircmaxell/password_compat](https://github.com/ircmaxell/password_compat).
