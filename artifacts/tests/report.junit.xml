@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="5" assertions="10" failures="0" errors="0" time="0.150649">
+    <testsuite name="HashPbkdf2Test" file="/home/travis/build/eloquent/pbkdf2-compat/test/suite/HashPbkdf2Test.php" tests="5" assertions="10" failures="0" errors="0" time="0.150649">
+      <testsuite name="HashPbkdf2Test::testHashPbkdf2" tests="5" assertions="10" failures="0" errors="0" time="0.150649">
+        <testcase name="testHashPbkdf2 with data set #0" assertions="2" time="0.005346"/>
+        <testcase name="testHashPbkdf2 with data set #1" assertions="2" time="0.002771"/>
+        <testcase name="testHashPbkdf2 with data set #2" assertions="2" time="0.036251"/>
+        <testcase name="testHashPbkdf2 with data set #3" assertions="2" time="0.070213"/>
+        <testcase name="testHashPbkdf2 with data set #4" assertions="2" time="0.036068"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
