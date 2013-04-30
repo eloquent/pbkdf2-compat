@@ -1,0 +1,23 @@
+{
+    "name": "eloquent/pbkdf2-compat",
+    "description": "A compatibility library for the PHP 5.5 function hash_pbkdf2().",
+    "keywords": ["pbkdf", "pbkdf2", "pkcs", "pkcs5", "hash", "hash_pbkdf2", "compat", "compatibility"],
+    "homepage": "https://github.com/eloquent/pbkdf2-compat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erin Millard",
+            "email": "ezzatron@gmail.com",
+            "homepage": "http://ezzatron.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "icecave/archer": "~0.3"
+    },
+    "autoload": {
+        "files": ["src/hash_pbkdf2.php"]
+    }
+}
