@@ -34,11 +34,21 @@ class HashPbkdf2Test extends PHPUnit_Framework_TestCase
      */
     public function testHashPbkdf2($password, $salt, $algo, $iterations, $length, $expectedHexHash)
     {
-        $hexHash = hash_pbkdf2($algo, $password, $salt, $iterations, $length * 2);
-        $rawHash = hash_pbkdf2($algo, $password, $salt, $iterations, $length, true);
+        $this->assertSame(
+            $expectedHexHash,
+            hash_pbkdf2($algo, $password, $salt, $iterations, $length * 2)
+        );
+    }
 
-        $this->assertSame($expectedHexHash, $hexHash);
-        $this->assertSame(pack('H*', $expectedHexHash), $rawHash);
+    /**
+     * @dataProvider pbkdf2Data
+     */
+    public function testHashPbkdf2Raw($password, $salt, $algo, $iterations, $length, $expectedHexHash)
+    {
+        $this->assertSame(
+            pack('H*', $expectedHexHash),
+            hash_pbkdf2($algo, $password, $salt, $iterations, $length, true)
+        );
     }
 
     /**
