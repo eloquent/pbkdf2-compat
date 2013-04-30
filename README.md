@@ -21,6 +21,10 @@ to the native function when it is available.
 
 See the [PHP manual entry](http://php.net/hash_pbkdf2).
 
+**IMPORTANT:** Note that although the documentation does not specify, the
+`$length` parameter is *currently* implemented as a **string length**, not a
+byte length. It is unknown whether this will change once PHP 5.5 is out of beta.
+
 ## Acknowledgements
 
 Inspired by [ircmaxell/password_compat](https://github.com/ircmaxell/password_compat).

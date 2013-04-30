@@ -12,9 +12,18 @@
 if (!function_exists('hash_pbkdf2')) {
     function hash_pbkdf2($algo, $password, $salt, $iterations, $length = 0, $raw_output = false)
     {
-        $blocks = ceil($length / strlen(hash($algo, null, true)));
-        $digest = '';
+        if ($length % 2 !== 0) {
+            throw new InvalidArgumentException('Length must be a multiple of 2.');
+        }
+        $length = $length / 2;
 
+        if (0 === $length) {
+            $blocks = 1;
+        } else {
+            $blocks = ceil($length / strlen(hash($algo, null, true)));
+        }
+
+        $digest = '';
         for ($i = 1; $i <= $blocks; $i++) {
             $ib = $block = hash_hmac(
                 $algo,
@@ -30,11 +39,13 @@ if (!function_exists('hash_pbkdf2')) {
             $digest .= $ib;
         }
 
-        $hash = substr($digest, 0, $length);
+        if (0 !== $length) {
+            $digest = substr($digest, 0, $length);
+        }
         if (!$raw_output) {
-            $hash = bin2hex($hash);
+            $digest = bin2hex($digest);
         }
 
-        return $hash;
+        return $digest;
     }
 }
