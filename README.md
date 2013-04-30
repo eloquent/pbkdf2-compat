@@ -23,7 +23,10 @@ See the [PHP manual entry](http://php.net/hash_pbkdf2).
 
 **IMPORTANT:** Note that although the documentation does not specify, the
 `$length` parameter is *currently* implemented as a **string length**, not a
-byte length. It is unknown whether this will change once PHP 5.5 is out of beta.
+byte length. This means that when `$raw_output` is false, `$length` needs to be
+doubled to produce a hash containing the same amount of data (because hex
+encoding doubles the number of bytes in the result string). It is unknown
+whether this will change once PHP 5.5 is out of beta.
 
 ## Acknowledgements
 

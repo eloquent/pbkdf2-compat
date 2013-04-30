@@ -12,11 +12,6 @@
 if (!function_exists('hash_pbkdf2')) {
     function hash_pbkdf2($algo, $password, $salt, $iterations, $length = 0, $raw_output = false)
     {
-        if ($length % 2 !== 0) {
-            throw new InvalidArgumentException('Length must be a multiple of 2.');
-        }
-        $length = $length / 2;
-
         if (0 === $length) {
             $blocks = 1;
         } else {
@@ -39,11 +34,11 @@ if (!function_exists('hash_pbkdf2')) {
             $digest .= $ib;
         }
 
-        if (0 !== $length) {
-            $digest = substr($digest, 0, $length);
-        }
         if (!$raw_output) {
             $digest = bin2hex($digest);
+        }
+        if (0 !== $length) {
+            $digest = substr($digest, 0, $length);
         }
 
         return $digest;
