@@ -12,11 +12,11 @@
 if (!function_exists('hash_pbkdf2')) {
     function hash_pbkdf2($algo, $password, $salt, $iterations, $length = 0, $raw_output = false)
     {
+        $algoLength = strlen(hash($algo, null, true));
         if (0 === $length) {
-            $blocks = 1;
-        } else {
-            $blocks = ceil($length / strlen(hash($algo, null, true)));
+            $length = $algoLength;
         }
+        $blocks = ceil($length / $algoLength);
 
         $digest = '';
         for ($i = 1; $i <= $blocks; $i++) {
@@ -37,9 +37,7 @@ if (!function_exists('hash_pbkdf2')) {
         if (!$raw_output) {
             $digest = bin2hex($digest);
         }
-        if (0 !== $length) {
-            $digest = substr($digest, 0, $length);
-        }
+        $digest = substr($digest, 0, $length);
 
         return $digest;
     }
