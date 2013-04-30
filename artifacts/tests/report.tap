@@ -1,9 +1,9 @@
 TAP version 13
-ok 1 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #1" ('password', 'salt', 'sha1', 1, 40, '0c60c80f961f0e71f3a9b524af6012062fe037a6')
-ok 2 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #2" ('password', 'salt', 'sha1', 2, 40, 'ea6c014dc72d6f8ccd1ed92ace1d41f0d8de8957')
-ok 3 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #3" ('password', 'salt', 'sha1', 4096, 40, '4b007901b765489abead49d926f721d065a429c1')
-ok 4 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #5" ('passwordPASSWORDpassword', 'saltSALTsaltSALTsaltSALTsaltSALTsalt', 'sha1', 4096, 50, '3d2eec4fe41c849b80c8d83662c0e44a8b291a964cf2f07038')
-ok 5 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #6" ('pass' . "\0" . 'word', 'sa' . "\0" . 'lt', 'sha1', 4096, 32, '56fa6aa75548099dcc37d7f03425e0c3')
+ok 1 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #1" ('password', 'salt', 'sha1', 1, 20, '0c60c80f961f0e71f3a9b524af6012062fe037a6')
+ok 2 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #2" ('password', 'salt', 'sha1', 2, 20, 'ea6c014dc72d6f8ccd1ed92ace1d41f0d8de8957')
+ok 3 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #3" ('password', 'salt', 'sha1', 4096, 20, '4b007901b765489abead49d926f721d065a429c1')
+ok 4 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #5" ('passwordPASSWORDpassword', 'saltSALTsaltSALTsaltSALTsaltSALTsalt', 'sha1', 4096, 25, '3d2eec4fe41c849b80c8d83662c0e44a8b291a964cf2f07038')
+ok 5 - HashPbkdf2Test::testHashPbkdf2 with data set "RFC test vector #6" ('pass' . "\0" . 'word', 'sa' . "\0" . 'lt', 'sha1', 4096, 16, '56fa6aa75548099dcc37d7f03425e0c3')
 ok 6 - HashPbkdf2Test::testHashPbkdf2 with data set "Default length" ('password', 'salt', 'sha1', 1, 0, '0c60c80f961f0e71f3a9b524af6012062fe037a6')
 ok 7 - HashPbkdf2Test::testHashPbkdf2 with data set "Alternate hashing algorithm" ('password', 'salt', 'sha512', 1, 0, '867f70cf1ade02cff3752599a3a53dc4af34c7a669815ae5d513554e1c8cf252c02d470a285a0501bad999bfe943c08f050235d7d68b1da55e63f73b60a57fce')
 1..7
