@@ -23,9 +23,9 @@ See the [PHP manual entry](http://php.net/hash_pbkdf2).
 
 ## Behaviour of length parameter
 
-Although the documentation does not specify, the `$length` parameter is
-*currently* implemented as a **string length**, not a byte length. This means
-that when `$raw_output` is false, `$length` needs to be doubled to produce a
+Although the documentation does not specify, the $length parameter currently
+refers to the resulting string length, not the length of the raw hash. This
+means that when $raw_output is false, $length needs to be doubled to produce a
 hash containing the same amount of data (because hex encoding doubles the number
 of bytes in the result string).
 
