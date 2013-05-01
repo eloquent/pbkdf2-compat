@@ -21,12 +21,20 @@ to the native function when it is available.
 
 See the [PHP manual entry](http://php.net/hash_pbkdf2).
 
-**IMPORTANT:** Note that although the documentation does not specify, the
-`$length` parameter is *currently* implemented as a **string length**, not a
-byte length. This means that when `$raw_output` is false, `$length` needs to be
-doubled to produce a hash containing the same amount of data (because hex
-encoding doubles the number of bytes in the result string). It is unknown
-whether this will change once PHP 5.5 is out of beta.
+## Behaviour of length parameter
+
+Although the documentation does not specify, the `$length` parameter is
+*currently* implemented as a **string length**, not a byte length. This means
+that when `$raw_output` is false, `$length` needs to be doubled to produce a
+hash containing the same amount of data (because hex encoding doubles the number
+of bytes in the result string).
+
+When `$length` is set to 0 (i.e. use the default length), the native
+implementation will halve the length of data returned if `$raw_output` is false.
+This is almost certainly a bug, and the issue has been raised
+[here](https://bugs.php.net/bug.php?id=64745).
+
+It is unknown whether these behaviours will change once PHP 5.5 is out of beta.
 
 ## Acknowledgements
 
