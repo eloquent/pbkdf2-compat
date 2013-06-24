@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="14" assertions="14" failures="0" errors="0" time="0.274866">
-    <testsuite name="HashPbkdf2Test" file="/home/travis/build/eloquent/pbkdf2-compat/test/suite/HashPbkdf2Test.php" tests="14" assertions="14" failures="0" errors="0" time="0.274866">
-      <testsuite name="HashPbkdf2Test::testHashPbkdf2" tests="7" assertions="7" failures="0" errors="0" time="0.170633">
-        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #1&quot;" assertions="1" time="0.006732"/>
-        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #2&quot;" assertions="1" time="0.003697"/>
-        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #3&quot;" assertions="1" time="0.042415"/>
-        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #5&quot;" assertions="1" time="0.069472"/>
-        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #6&quot;" assertions="1" time="0.041849"/>
-        <testcase name="testHashPbkdf2 with data set &quot;Default length&quot;" assertions="1" time="0.003062"/>
-        <testcase name="testHashPbkdf2 with data set &quot;Alternate hashing algorithm&quot;" assertions="1" time="0.003406"/>
+  <testsuite name="" tests="14" assertions="14" failures="0" errors="0" time="0.235450">
+    <testsuite name="HashPbkdf2Test" file="/home/travis/build/eloquent/pbkdf2-compat/test/suite/HashPbkdf2Test.php" tests="14" assertions="14" failures="0" errors="0" time="0.235450">
+      <testsuite name="HashPbkdf2Test::testHashPbkdf2" tests="7" assertions="7" failures="0" errors="0" time="0.145855">
+        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #1&quot;" assertions="1" time="0.005227"/>
+        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #2&quot;" assertions="1" time="0.002845"/>
+        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #3&quot;" assertions="1" time="0.038365"/>
+        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #5&quot;" assertions="1" time="0.055394"/>
+        <testcase name="testHashPbkdf2 with data set &quot;RFC test vector #6&quot;" assertions="1" time="0.038708"/>
+        <testcase name="testHashPbkdf2 with data set &quot;Default length&quot;" assertions="1" time="0.002654"/>
+        <testcase name="testHashPbkdf2 with data set &quot;Alternate hashing algorithm&quot;" assertions="1" time="0.002662"/>
       </testsuite>
-      <testsuite name="HashPbkdf2Test::testHashPbkdf2Raw" tests="7" assertions="7" failures="0" errors="0" time="0.104233">
-        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #1&quot;" assertions="1" time="0.003778"/>
-        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #2&quot;" assertions="1" time="0.003169"/>
-        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #3&quot;" assertions="1" time="0.022474"/>
-        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #5&quot;" assertions="1" time="0.044685"/>
-        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #6&quot;" assertions="1" time="0.023981"/>
-        <testcase name="testHashPbkdf2Raw with data set &quot;Default length&quot;" assertions="1" time="0.002994"/>
-        <testcase name="testHashPbkdf2Raw with data set &quot;Alternate hashing algorithm&quot;" assertions="1" time="0.003152"/>
+      <testsuite name="HashPbkdf2Test::testHashPbkdf2Raw" tests="7" assertions="7" failures="0" errors="0" time="0.089595">
+        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #1&quot;" assertions="1" time="0.002636"/>
+        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #2&quot;" assertions="1" time="0.002815"/>
+        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #3&quot;" assertions="1" time="0.020427"/>
+        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #5&quot;" assertions="1" time="0.037672"/>
+        <testcase name="testHashPbkdf2Raw with data set &quot;RFC test vector #6&quot;" assertions="1" time="0.020766"/>
+        <testcase name="testHashPbkdf2Raw with data set &quot;Default length&quot;" assertions="1" time="0.002580"/>
+        <testcase name="testHashPbkdf2Raw with data set &quot;Alternate hashing algorithm&quot;" assertions="1" time="0.002699"/>
       </testsuite>
     </testsuite>
   </testsuite>
