@@ -15,7 +15,7 @@
         "php": ">=5.3"
     },
     "require-dev": {
-        "icecave/archer": "~0.3"
+        "icecave/archer": "~0.4"
     },
     "autoload": {
         "files": ["src/hash_pbkdf2.php"]
