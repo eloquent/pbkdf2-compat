@@ -15,6 +15,9 @@ if (!function_exists('hash_pbkdf2')) {
         $algoLength = strlen(hash($algo, null, true));
         if (0 === $length) {
             $length = $algoLength;
+            if (!$raw_output) {
+                $length *= 2;
+            }
         }
         $blocks = ceil($length / $algoLength);
 

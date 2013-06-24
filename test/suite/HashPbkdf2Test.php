@@ -29,16 +29,6 @@ class HashPbkdf2Test extends PHPUnit_Framework_TestCase
     public function pbkdf2Data()
     {
         $data = array(
-            'Default length'              => array('password', 'salt', 'sha1', 1, 0, '0c60c80f961f0e71f3a9'),
-            'Alternate hashing algorithm' => array('password', 'salt', 'sha512', 1, 0, '867f70cf1ade02cff3752599a3a53dc4af34c7a669815ae5d513554e1c8cf252'),
-        );
-
-        return array_merge($this->rfcTestVectorData(), $data);
-    }
-
-    public function pbkdf2RawData()
-    {
-        $data = array(
             'Default length'              => array('password', 'salt', 'sha1', 1, 0, '0c60c80f961f0e71f3a9b524af6012062fe037a6'),
             'Alternate hashing algorithm' => array('password', 'salt', 'sha512', 1, 0, '867f70cf1ade02cff3752599a3a53dc4af34c7a669815ae5d513554e1c8cf252c02d470a285a0501bad999bfe943c08f050235d7d68b1da55e63f73b60a57fce'),
         );
@@ -58,7 +48,7 @@ class HashPbkdf2Test extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider pbkdf2RawData
+     * @dataProvider pbkdf2Data
      */
     public function testHashPbkdf2Raw($password, $salt, $algo, $iterations, $length, $expectedHexHash)
     {
