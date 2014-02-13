@@ -2,12 +2,13 @@
 
 *A compatibility library for the PHP 5.5 function hash_pbkdf2().*
 
-[![Build Status]][Latest build]
-[![Test Coverage]][Test coverage report]
+[![The most recent stable version is 1.0.1][version-image]][Semantic versioning]
+[![Current build status image][build-image]][Current build status]
+[![Current coverage status image][coverage-image]][Current coverage status]
 
-## Installation
+## Installation and documentation
 
-Available as [Composer] package [eloquent/pbkdf2-compat].
+- Available as [Composer] package [eloquent/pbkdf2-compat].
 
 ## What does it do?
 
@@ -35,13 +36,16 @@ Symfony's [Pbkdf2PasswordEncoder].
 
 <!-- References -->
 
-[Build Status]: https://raw.github.com/eloquent/pbkdf2-compat/gh-pages/artifacts/images/icecave/regular/build-status.png
-[Composer]: http://getcomposer.org/
-[eloquent/pbkdf2-compat]: https://packagist.org/packages/eloquent/pbkdf2-compat
 [ircmaxell/password_compat]: https://github.com/ircmaxell/password_compat
-[Latest build]: http://travis-ci.org/eloquent/pbkdf2-compat
 [PHP manual entry]: http://php.net/hash_pbkdf2
-[Test coverage report]: http://lqnt.co/pbkdf2-compat/artifacts/tests/coverage/
-[Test Coverage]: https://raw.github.com/eloquent/pbkdf2-compat/gh-pages/artifacts/images/icecave/regular/coverage.png
 [hash_pbkdf2()]: http://php.net/hash_pbkdf2
 [Pbkdf2PasswordEncoder]: https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Security/Core/Encoder/Pbkdf2PasswordEncoder.php
+
+[Composer]: http://getcomposer.org/
+[build-image]: http://img.shields.io/travis/eloquent/pbkdf2-compat/develop.svg "Current build status for the develop branch"
+[Current build status]: https://travis-ci.org/eloquent/pbkdf2-compat
+[coverage-image]: http://img.shields.io/coveralls/eloquent/pbkdf2-compat/develop.svg "Current test coverage for the develop branch"
+[Current coverage status]: https://coveralls.io/r/eloquent/pbkdf2-compat
+[eloquent/pbkdf2-compat]: https://packagist.org/packages/eloquent/pbkdf2-compat
+[Semantic versioning]: http://semver.org/
+[version-image]: http://img.shields.io/:semver-1.0.1-brightgreen.svg "This project uses semantic versioning"
