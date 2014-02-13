@@ -2,7 +2,7 @@
 
 *A compatibility library for the PHP 5.5 function hash_pbkdf2().*
 
-[![The most recent stable version is 1.0.0][version-image]][Semantic versioning]
+[![The most recent stable version is 1.0.1][version-image]][Semantic versioning]
 [![Current build status image][build-image]][Current build status]
 [![Current coverage status image][coverage-image]][Current coverage status]
 
@@ -48,4 +48,4 @@ Symfony's [Pbkdf2PasswordEncoder].
 [Current coverage status]: https://coveralls.io/r/eloquent/pbkdf2-compat
 [eloquent/pbkdf2-compat]: https://packagist.org/packages/eloquent/pbkdf2-compat
 [Semantic versioning]: http://semver.org/
-[version-image]: http://img.shields.io/:semver-1.0.0-brightgreen.svg "This project uses semantic versioning"
+[version-image]: http://img.shields.io/:semver-1.0.1-brightgreen.svg "This project uses semantic versioning"
